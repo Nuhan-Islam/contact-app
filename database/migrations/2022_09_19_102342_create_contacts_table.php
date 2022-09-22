@@ -17,7 +17,7 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('phone');
+            $table->string('phone')->nullable();
             $table->string('email');
             $table->string('address');
             $table->unsignedBigInteger('company_id');
